@@ -6,7 +6,7 @@ incluye un archivo Dockerfile para construir una imagen Docker y un archivo dock
 ## Contenido del repositorio
 
 - `app/index.js`: Código del servidor web que responde a peticiones GET en la ruta /health.
-- `package.json`: Archivo de configuración de dependencias del proyecto.
+- `app/package.json`: Archivo de configuración de dependencias del proyecto.
 - `Dockerfile`: Archivo para construir la imagen Docker del servidor web Node.js.
 - `docker-compose.yml`: Archivo de configuración de Docker Compose para definir múltiples servicios Docker.
 
