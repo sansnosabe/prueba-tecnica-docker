@@ -12,23 +12,27 @@ incluye un archivo Dockerfile para construir una imagen Docker y un archivo dock
 
 ## Cómo lanzar un contenedor con Docker
 
-1. Abre el terminal y navega al directorio del repositorio:
+1. Clona el proyecto:
+
+   - git clone git@github.com:sansnosabe/prueba-tecnica-docker.git
+
+2. Abre el terminal y navega al directorio del repositorio:
 
    - cd prueba-tecnica-docker
 
-2. Construye la imagen del contenedor:
+3. Construye la imagen del contenedor:
 
    - docker build -t rubiko-basic-docker .
 
-3. Ejecuta el contenedor y mapea el puerto 5050 del host al puerto 5000 del contenedor:
+4. Ejecuta el contenedor y mapea el puerto 5050 del host al puerto 5000 del contenedor:
 
    - docker run -p 5050:5000 rubiko-basic-docker
 
-4. Abre el navegador y verifica que el servidor responde correctamente:
+5. Abre el navegador y verifica que el servidor responde correctamente:
 
    - http://localhost:5050/health
 
-5. (EXTRA) Para ejecutar el contenedor pasando una variable de entorno ejecuta el siguiente comando:
+6. (EXTRA) Para ejecutar el contenedor pasando una variable de entorno ejecuta el siguiente comando:
 
    - docker run -p 5050:5000 -e GREETINGS="Hello Rubiko Tech!" rubiko-basic-docker
 
