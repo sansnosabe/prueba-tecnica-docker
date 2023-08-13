@@ -14,7 +14,7 @@ incluye un archivo Dockerfile para construir una imagen Docker y un archivo dock
 
 1. Clona el proyecto:
 
-   - git clone git@github.com:sansnosabe/prueba-tecnica-docker.git
+   - git clone https://github.com/sansnosabe/prueba-tecnica-docker.git
 
 2. Abre el terminal y navega al directorio del repositorio:
 
