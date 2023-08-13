@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  web:
+    build:
+      context: ./
+    ports:
+      - "5050:5000"
+    environment:
+      GREETINGS: "Hello Rubiko Tech!"
+
+  curl:
+    image: curlimages/curl
+    depends_on:
+      - web
+    command: ["http://web:5000/health"]
